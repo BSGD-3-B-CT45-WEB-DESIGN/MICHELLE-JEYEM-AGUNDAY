@@ -1,0 +1,62 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: url('BTS_-_Arirang_(cover).png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    padding: 60px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: rgba(20, 10, 40, 0.78);
+    z-index: 0;
+}
+.page-header, .btn-list { position: relative; z-index: 1; }
+
+.page-header { text-align: center; margin-bottom: 56px; }
+.page-tag { font-size: 11px; letter-spacing: 5px; color: rgba(192,132,252,0.5); text-transform: uppercase; margin-bottom: 10px; }
+.page-title {
+    font-size: 32px; font-weight: 700;
+    background: linear-gradient(135deg, #e879f9, #818cf8);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.btn-list { display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 680px; }
+
+.btn-row {
+    display: flex; align-items: center; gap: 24px;
+    background: rgba(139, 92, 246, 0.07);
+    border: 1px solid rgba(192, 132, 252, 0.2); border-radius: 12px;
+    padding: 20px 28px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.btn-row:hover { border-color: rgba(192,132,252,0.5); box-shadow: 0 0 20px rgba(168,85,247,0.12); }
+
+.btn-brand { width: 130px; flex-shrink: 0; font-size: 12px; letter-spacing: 2px; color: #a78bfa; text-transform: uppercase; }
+.btn-desc  { flex: 1; font-size: 12px; color: rgba(196,181,253,0.5); font-style: italic; }
+
+.uberbutton { background-color: #000; border: none; color: white; padding: 13px 28px; font-size: 15px; cursor: pointer; font-family: inherit; border-radius: 6px; transition: background-color 0.5s ease; }
+.uberbutton:hover { background-color: rgba(0,0,0,0.5); }
+
+.amazonbutton { background-color: rgb(255,216,20); border: none; color: #000; padding: 13px 28px; font-size: 15px; border-radius: 49px; cursor: pointer; font-family: inherit; transition: background-color 0.5s ease; }
+.amazonbutton:hover { background-color: rgb(207,178,31); }
+
+.githubbutton { background-color: rgb(46,164,79); border: none; color: white; padding: 13px 28px; font-size: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; font-family: inherit; transition: box-shadow 0.5s ease; }
+.githubbutton:hover { box-shadow: 0px 4px 8px rgba(0,0,0,0.3); }
+
+.bootstrapbutton { background-color: rgb(121,82,179); border: none; color: white; padding: 13px 28px; font-size: 15px; font-weight: bold; border-radius: 8px; cursor: pointer; font-family: inherit; transition: background-color 0.5s ease; }
+.bootstrapbutton:hover { background-color: rgb(75,44,124); }
+
+.bootstrap2button { background-color: white; border: 1px solid rgb(108,117,125); color: rgb(108,117,125); padding: 13px 28px; font-size: 15px; font-weight: bold; border-radius: 8px; cursor: pointer; font-family: inherit; transition: background-color 0.5s ease, color 0.5s ease; }
+.bootstrap2button:hover { background-color: rgb(108,117,125); color: white; }
+
+.linkedinbutton { background-color: rgb(10,102,194); border: none; color: white; padding: 13px 28px; font-size: 15px; font-weight: bold; border-radius: 49px; cursor: pointer; font-family: inherit; transition: background-color 0.5s ease; }
+.linkedinbutton:hover { background-color: rgb(19,82,146); }
+
+.linkedin2button { background-color: white; border: 1px solid rgb(10,102,194); color: rgb(10,102,194); padding: 13px 28px; font-size: 15px; font-weight: bold; border-radius: 49px; cursor: pointer; font-family: inherit; }
+.linkedin2button:hover { background-color: rgb(76,159,243); border: 3px solid rgb(10,102,194); color: white; }

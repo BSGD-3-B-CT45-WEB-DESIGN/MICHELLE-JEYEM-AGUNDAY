@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BTS Playlist 💜</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: url('BTS_-_Arirang_(cover).png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        body::before {
+            content: '';
+            position: fixed; inset: 0;
+            background: rgba(20, 10, 40, 0.75);
+            z-index: 0;
+        }
+        .playlist-bar, .main-wrap { position: relative; z-index: 1; }
+
+        .playlist-bar {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 14px 0;
+            background: rgba(139, 92, 246, 0.15);
+            border-bottom: 1px solid rgba(192, 132, 252, 0.3);
+        }
+        .scroll-text {
+            display: inline-block;
+            color: #e879f9;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 100%;
+            animation: scroll 22s linear infinite;
+            text-shadow: 0 0 8px #e879f9, 0 0 20px #a855f7;
+            letter-spacing: 2px;
+        }
+        @keyframes scroll {
+            0%   { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .main-wrap {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .audio-card {
+            background: rgba(139, 92, 246, 0.1);
+            border: 2px solid rgba(192, 132, 252, 0.4);
+            border-radius: 24px;
+            padding: 48px 60px;
+            text-align: center;
+            box-shadow: 0 0 60px rgba(168, 85, 247, 0.2), inset 0 0 40px rgba(139, 92, 246, 0.05);
+            max-width: 480px; width: 100%;
+        }
+
+        .bts-title {
+            font-size: 26px; font-weight: 700;
+            background: linear-gradient(135deg, #e879f9, #818cf8);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 4px;
+            accent-color: #a855f7;
+        }
+
+        .gif-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .gif {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            border: 2px solid rgba(192, 132, 252, 0.5);
+        }
+        .gif-label {
+            color: #c084fc;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px #a855f7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="playlist-bar">
+    <div class="scroll-text">
+        💜 BTS — Hooligan • K-Pop • ARMY Forever • 방탄소년단 • 💜 BTS — Hooligan • K-Pop • ARMY Forever • 방탄소년단 •
+    </div>
+</div>
+
+<div class="main-wrap">
+    <div class="audio-card">
+        <h2 class="bts-title">💜 BTS PLAYLIST</h2>
+        <audio controls>
+            <source src="Hooligan.mp3" type="audio/mpeg">
+        </audio>
+        <div class="gif-row">
+            <img class="gif" src="amazing.gif" alt="BTS gif">
+            <span class="gif-label">HOOLIGAN</span>
+            <img class="gif" src="amazing.gif" alt="BTS gif">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

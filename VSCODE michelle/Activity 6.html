@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BTS — Login 💜</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: url('BTS_-_Arirang_(cover).png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body::before {
+            content: '';
+            position: fixed; inset: 0;
+            background: rgba(20, 10, 40, 0.80);
+        }
+        .login-box {
+            position: relative; z-index: 1;
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(192, 132, 252, 0.3);
+            border-radius: 20px;
+            padding: 44px 40px;
+            width: 360px;
+            text-align: center;
+            box-shadow: 0 0 50px rgba(168, 85, 247, 0.2);
+        }
+        .login-box .icon { font-size: 36px; margin-bottom: 12px; }
+        .login-box h1 {
+            font-size: 24px; margin-bottom: 6px;
+            background: linear-gradient(135deg, #e879f9, #818cf8);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .login-box p { color: #c4b5fd; font-size: 13px; margin-bottom: 28px; }
+        .login-box input {
+            width: 100%; padding: 12px 16px; margin-bottom: 14px;
+            border-radius: 10px; border: 1px solid rgba(192,132,252,0.3);
+            background: rgba(139,92,246,0.08); color: white;
+            font-size: 14px; outline: none; transition: border 0.3s, box-shadow 0.3s;
+            font-family: inherit;
+        }
+        .login-box input::placeholder { color: #a78bfa88; }
+        .login-box input:focus { border-color: #a855f7; box-shadow: 0 0 10px rgba(168,85,247,0.3); }
+        .login-box button {
+            width: 100%; padding: 13px;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            color: #fff; font-weight: bold; font-size: 15px;
+            border: none; border-radius: 10px; cursor: pointer;
+            transition: opacity 0.3s, box-shadow 0.3s;
+            font-family: inherit; letter-spacing: 1px;
+        }
+        .login-box button:hover { opacity: 0.88; box-shadow: 0 0 20px rgba(168,85,247,0.5); }
+        .login-box .link { margin-top: 18px; font-size: 13px; color: #c4b5fd; }
+        .login-box .link a { color: #e879f9; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <div class="icon">💜</div>
+        <h1>Welcome, ARMY</h1>
+        <p>Sign in to your BTS account</p>
+        <input type="text" placeholder="Username or Email">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+        <div class="link">Don't have an account? <a href="#">Sign up</a></div>
+    </div>
+</body>
+</html>
